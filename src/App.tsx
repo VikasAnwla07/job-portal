@@ -8,8 +8,6 @@ import HomePage from "./Pages/HomePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import '@mantine/carousel/styles.css';
 import FindJobs from "./Pages/FindJobs";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
 import FindTalentPage from "./Pages/FindTalentPage";
 import TalentProfilePage from "./Pages/TalentProfilePage";
 import PostJobPage from "./Pages/PostJobPage";
@@ -18,10 +16,10 @@ import ApplyJobPage from "./Pages/ApplyJobPage";
 import CompanyPage from "./Pages/CompanyPage";
 import PostedJobPage from "./Pages/PostedJobPage";
 import JobHistoryPage from "./Pages/JobHistoryPage";
-import SignUp from "./SignUpLogin/SignUp";
-import Login from "./SignUpLogin/Login";
 import SignUpPage from "./Pages/SignUpPage";
 import ProfilePage from "./Pages/ProfilePage";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const theme = createTheme({
