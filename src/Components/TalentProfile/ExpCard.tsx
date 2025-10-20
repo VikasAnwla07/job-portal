@@ -1,4 +1,3 @@
-import { IconBookmark } from "@tabler/icons-react";
 
 const ExpCard=(props:any)=>{
     return (

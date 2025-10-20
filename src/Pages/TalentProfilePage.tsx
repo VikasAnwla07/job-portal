@@ -7,6 +7,7 @@ import RecommendTalent from "../Components/TalentProfile/RecommendTalent";
 
 
 const TalentProfilePage = () => {
+    
     return (
         <div className="min-h-[100vh] bg-mine-shaft-950 font-['Poppins'] p-4">
             <Link className="my-4 inline-block" to="/find-talent">

@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+used axios to connect to backend.
+
+react-redux and redux/toolkit
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

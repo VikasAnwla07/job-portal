@@ -1,11 +1,12 @@
-import { Avatar, Indicator, NavLink } from "@mantine/core";
+import { Button, Indicator } from "@mantine/core";
 import { IconAnchor, IconBell, IconSettings } from "@tabler/icons-react";
-import React from "react";
 import NavLinks from "./NavLinks";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+    const user = useSelector((state:any)=>state.user);
     const location = useLocation();
   return ( location.pathname!="/signup" && location.pathname!="/login" ? 
     <div className="w-full text-white px-6 bg-mine-shaft-950 h-20 flex justify-between items-center font-['Poppins']">
@@ -17,10 +18,14 @@ const Header = () => {
         {NavLinks()}
         
         <div className="flex gap-3 items-center">
-            <ProfileMenu />
-            <div className="bg-mine-shaft-900 p-1.5 rounded-full">
+            {user ? <ProfileMenu /> : 
+                <Link to="/login">
+                    <Button color="bright-sun.4" variant="subtle">Login</Button>
+                </Link>
+            }
+            {/* <div className="bg-mine-shaft-900 p-1.5 rounded-full">
                 <IconSettings  stroke={1.5}/>
-            </div>
+            </div> */}
             <div className="bg-mine-shaft-900 p-1.5 rounded-full">
                 <Indicator offset={6} color="bright-sun.5" size={8} processing>
                     <IconBell stroke={1.5} />

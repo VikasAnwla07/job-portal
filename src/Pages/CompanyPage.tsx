@@ -1,6 +1,6 @@
 import { Button } from "@mantine/core";
 import { IconArrowLeft } from "@tabler/icons-react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Company from "../Components/CompanyProfile/Company";
 import SimilarCompanies from "../Components/CompanyProfile/SimilarCompanies";
 
